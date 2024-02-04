@@ -1,5 +1,5 @@
 name: Electron Builder Action
-author: Samuel Meuli
+author: 'Harrison Borges (forked from: Samuel Meuli)'
 description: GitHub Action for building and releasing Electron apps
 
 inputs:
@@ -15,7 +15,7 @@ inputs:
   release:
     description: Whether the app should be released after a successful build
     required: false
-    default: false
+    default: 'false'
   windows_certs:
     description: Base64-encoded code signing certificate for Windows
     required: false
@@ -33,11 +33,11 @@ inputs:
   skip_build:
     description: Whether the action should execute the NPM build script before running `electron-builder`
     required: false
-    default: false
+    default: 'false'
   use_vue_cli:
     description: Whether to run `electron-builder` using the Vue CLI plugin instead of calling the command directly
     required: false
-    default: false
+    default: 'false'
   args:
     description: Other arguments to pass to the `electron-builder` command, e.g. configuration overrides
     required: false
