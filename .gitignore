@@ -7,5 +7,3 @@ test/**/dist_electron
 # Generated files in test projects
 test/**/dist/
 test/**/dist_electron/
-
-dist/
